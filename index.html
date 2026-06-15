@@ -12,20 +12,31 @@
         header { background: linear-gradient(135deg, #1e293b, #0f172a); padding: 4rem 2rem; text-align: center; border-bottom: 1px solid #1e293b; }
         header h1 { font-size: 2.5rem; color: #f8fafc; }
         header p { font-size: 1.2rem; color: #94a3b8; margin-top: 0.5rem; }
-        .links { margin-top: 1.5rem; }
-        .links a { margin: 0 0.75rem; padding: 0.5rem 1.2rem; border: 1px solid #60a5fa; border-radius: 6px; transition: background 0.2s; }
+        .links { margin-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+        .links a { padding: 0.5rem 1.2rem; border: 1px solid #60a5fa; border-radius: 6px; transition: background 0.2s; }
         .links a:hover { background: #60a5fa; color: #0f172a; text-decoration: none; }
-        main { max-width: 800px; margin: 3rem auto; padding: 0 2rem; }
+        main { max-width: 800px; margin: 3rem auto; padding: 0 1.5rem; }
         section { margin-bottom: 3rem; }
         h2 { font-size: 1.4rem; color: #60a5fa; margin-bottom: 1rem; border-bottom: 1px solid #1e293b; padding-bottom: 0.5rem; }
         .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
         .skills span { background: #1e293b; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.9rem; }
         .job { margin-bottom: 1.5rem; }
-        .job h3 { color: #f8fafc; }
+        .job h3 { color: #f8fafc; font-size: 1.1rem; }
         .job .meta { color: #94a3b8; font-size: 0.9rem; }
         .job ul { margin-top: 0.5rem; padding-left: 1.2rem; }
         .job li { margin-bottom: 0.3rem; }
         footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.85rem; }
+
+        @media (max-width: 600px) {
+            header { padding: 2.5rem 1rem; }
+            header h1 { font-size: 1.7rem; }
+            header p { font-size: 1rem; }
+            .links a { padding: 0.4rem 0.9rem; font-size: 0.9rem; }
+            main { margin: 2rem auto; padding: 0 1rem; }
+            h2 { font-size: 1.2rem; }
+            .job h3 { font-size: 1rem; }
+            .job ul { padding-left: 1rem; font-size: 0.9rem; }
+        }
     </style>
 </head>
 <body>
